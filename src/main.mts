@@ -62,7 +62,7 @@ const service: ITagService = {
         if (name.length > 50 || labels.has(name)) throw new Error("Official gauge name is too long or ambiguous");
         labels.add(name);
         tags.push({ "Contract Address": `eip155:43114:${gauge}`, "Project Name": "Curve Finance", "Public Name Tag": name,
-          "UI/Website Link": "https://www.curve.finance", "Public Note": `Liquidity gauge and ERC-20 staking receipt token on Avalanche. LP token: ${lp}. Pool: ${pool}. Includes historical gauges; no claim of active rewards.` });
+          "UI/Website Link": "https://www.curve.finance", "Public Note": `Liquidity gauge and ERC-20 staking receipt token on Avalanche. LP token: ${lp}. Includes historical gauges; no claim of active rewards.` });
       }
       if (rows.length < 1000) break;
     }

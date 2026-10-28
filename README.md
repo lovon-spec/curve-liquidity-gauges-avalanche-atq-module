@@ -12,3 +12,5 @@ Public names use the official implementation template, Curve.fi <LP token symbol
 Names longer than 50 characters or ambiguous names fail the complete call.
 
 Build with Yarn and call the sole exported async returnTags(chainId, apiKey). This preparation draft confers no filing authority.
+
+Liquidity-pool entity IDs are source identifiers and are not asserted to be pool-contract addresses. Public Notes identify the gauge and its LP token only.
